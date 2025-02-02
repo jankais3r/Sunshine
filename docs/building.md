@@ -151,9 +151,10 @@ ninja -C build
 It may be beneficial to build remotely in some cases. This will enable easier building on different operating systems.
 
 1. Fork the project
-2. Activate workflows
-3. Trigger the *CI* workflow manually
-4. Download the artifacts/binaries from the workflow run summary
+2. Untick "Allow rebase merging" under the forked repo's Settings
+3. Activate workflows
+4. Trigger the *CI* workflow manually
+5. Download the artifacts/binaries from the workflow run summary
 
 <div class="section_buttons">
 
