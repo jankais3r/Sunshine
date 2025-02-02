@@ -41,7 +41,7 @@ jobs:
 
       - name: Setup Release
         id: setup_release
-        uses: jankais3r/setup-release-action
+        uses: jankais3r/setup-release-action@build
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
