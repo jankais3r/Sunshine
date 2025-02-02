@@ -299,7 +299,7 @@ jobs:
 
       - name: Create/Update GitHub Release
         if: ${{ needs.setup_release.outputs.publish_release == 'true' }}
-        uses: LizardByte/create-release-action@v2025.102.13208
+        uses: jankais3r/setup-release-action@build
         with:
           allowUpdates: true
           body: ${{ needs.setup_release.outputs.release_body }}
@@ -513,7 +513,7 @@ jobs:
 
       - name: Create/Update GitHub Release
         if: ${{ needs.setup_release.outputs.publish_release == 'true' }}
-        uses: LizardByte/create-release-action@v2025.102.13208
+        uses: jankais3r/setup-release-action@build
         with:
           allowUpdates: true
           body: ${{ needs.setup_release.outputs.release_body }}
@@ -713,7 +713,7 @@ jobs:
         if: >-
           matrix.release &&
           needs.setup_release.outputs.publish_release == 'true'
-        uses: LizardByte/create-release-action@v2025.102.13208
+        uses: jankais3r/setup-release-action@build
         with:
           allowUpdates: true
           artifacts: '${{ github.workspace }}/homebrew/*'
@@ -1030,7 +1030,7 @@ jobs:
 
       - name: Create/Update GitHub Release
         if: ${{ needs.setup_release.outputs.publish_release == 'true' }}
-        uses: LizardByte/create-release-action@v2025.102.13208
+        uses: jankais3r/setup-release-action@build
         with:
           allowUpdates: true
           body: ${{ needs.setup_release.outputs.release_body }}
